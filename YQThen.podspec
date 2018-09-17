@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YQThen'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Chain syntax'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Classes/**.{h, m}'
+  s.source_files = 'Classes/**.{h,m}'
   
   # s.resource_bundles = {
   #   'YQThen.podspec' => ['YQThen/Assets/*.png']
