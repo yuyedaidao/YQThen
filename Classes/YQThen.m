@@ -8,6 +8,23 @@
 
 #import "YQThen.h"
 
-@implementation YQThen
-
+@interface YQThen()
+@property (weak, nonatomic) id base;
 @end
+@implementation YQThen
+- (instancetype)initWith:(id)base {
+    if (self = [super init]) {
+        _base = base;
+    }
+    return self;
+}
+- (instancetype)then:(YQThenBlock)block {
+    !block ? : block(_base);
+    return self;
+}
+- (id)done:(YQThenBlock)block {
+    !block ? : block(_base);
+    return _base;
+}
+@end
+

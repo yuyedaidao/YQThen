@@ -14,6 +14,8 @@
 		550E66F9214F576300E1C003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550E66F7214F576300E1C003 /* LaunchScreen.storyboard */; };
 		550E66FC214F576300E1C003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E66FB214F576300E1C003 /* main.m */; };
 		550E6706214F576400E1C003 /* YQThenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E6705214F576400E1C003 /* YQThenTests.m */; };
+		550E6716214F5CD100E1C003 /* YQThen.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E6715214F5CD100E1C003 /* YQThen.m */; };
+		550E6717214F5CD100E1C003 /* YQThen.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E6715214F5CD100E1C003 /* YQThen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		550E6701214F576400E1C003 /* YQThenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQThenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550E6705214F576400E1C003 /* YQThenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQThenTests.m; sourceTree = "<group>"; };
 		550E6707214F576400E1C003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550E6714214F5CD100E1C003 /* YQThen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQThen.h; sourceTree = "<group>"; };
+		550E6715214F5CD100E1C003 /* YQThen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQThen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		550E66E0214F575100E1C003 = {
 			isa = PBXGroup;
 			children = (
+				550E6713214F5CBB00E1C003 /* Classes */,
 				550E66EB214F575100E1C003 /* YQThen */,
 				550E6704214F576400E1C003 /* YQThenTests */,
 				550E66EA214F575100E1C003 /* Products */,
@@ -101,6 +106,15 @@
 				550E6707214F576400E1C003 /* Info.plist */,
 			);
 			path = YQThenTests;
+			sourceTree = "<group>";
+		};
+		550E6713214F5CBB00E1C003 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				550E6714214F5CD100E1C003 /* YQThen.h */,
+				550E6715214F5CD100E1C003 /* YQThen.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550E6716214F5CD100E1C003 /* YQThen.m in Sources */,
 				550E66F1214F575200E1C003 /* ViewController.m in Sources */,
 				550E66FC214F576300E1C003 /* main.m in Sources */,
 				550E66EE214F575100E1C003 /* AppDelegate.m in Sources */,
@@ -213,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550E6717214F5CD100E1C003 /* YQThen.m in Sources */,
 				550E6706214F576400E1C003 /* YQThenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -351,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -364,8 +380,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97F5F2AF3C;
+				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = YQThen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,8 +398,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97F5F2AF3C;
+				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = YQThen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
